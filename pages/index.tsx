@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import { useEffect } from 'react'
 import AOS from 'aos';
 
-const Home: NextPage = () => {
+export default function Home() {
   useEffect(() => {
       AOS.init();
   }, []);
@@ -516,5 +515,3 @@ const Home: NextPage = () => {
     </>
   )
 }
-
-export default Home
